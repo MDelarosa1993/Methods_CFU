@@ -10,18 +10,25 @@
 
 
 "Hello World".include?("Hello")
-
+# The .include? method is asking if Hello is in the string.
+# True
 
 "Hello World".end_with?("Hello")
-
+# The end.with? method is asking if it ends with hello
+# False
 
 "Hello World".end_with?("rld")
-
+# The end.with? method is asking if the string ends with "rld"
+# true
 
 12.even?
+# is 12 even?
+# True
 
 
 18.next
+# .next gives me the number next in the order
+# 19
 
 
 
@@ -32,7 +39,9 @@
 # Include comments above each method call explaining the impact and return value of that method.
 greeting = "Hi how are you"
 name = "Melchor De La Rosa"
+# Makes the string all caps
 puts greeting.upcase
+# Tells me how many characters in the string
 puts name.length
 # EXAMPLE
 # The start_with? method is called on the first_name variable, which stores the string object "Jeff". 
@@ -51,7 +60,9 @@ puts first_name.start_with?("J")
 # Include comments above each method call explaining the impact and return value of that method.
 num1 = 35
 num2 = 200
+# Asks if 35 is even
 num1.even?
+# Asks if 200 is odd
 num2.odd?
 
 # SECTION 4: Calling methods on variables assigned to arrays.
