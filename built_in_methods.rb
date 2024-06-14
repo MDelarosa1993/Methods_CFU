@@ -30,7 +30,10 @@
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/String.html
 # Include comments above each method call explaining the impact and return value of that method.
-
+greeting = "Hi how are you"
+name = "Melchor De La Rosa"
+puts greeting.upcase
+puts name.length
 # EXAMPLE
 # The start_with? method is called on the first_name variable, which stores the string object "Jeff". 
 # The start_with? method returns true if the data in the first_name variable starts with the argument passed in.
@@ -46,11 +49,24 @@ puts first_name.start_with?("J")
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
-
-
+num1 = 35
+num2 = 200
+num1.even?
+num2.odd?
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+variable1 = Array["Hello", "Goodbye"]
+variable2 = Array["Hi", "Bye"]
+# Uppercase every letter in arguement "Hi"
+puts variable1[0].upcase
+# Counts how many arguements
+puts variable1.length
+# Uppercase every letter in arguement "Hi"
+ puts variable2[1].upcase
+ # Counts how many arguements
+ puts variable2.length
