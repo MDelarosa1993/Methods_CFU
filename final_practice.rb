@@ -71,33 +71,27 @@ puts  "Ten times ten equals #{square(10)}!"
 
 # check_stock(4, "Coffee");
 # # => "Coffee is stocked"
-def check_stock(quantity, coffee)
-  if quantity >= 4 && coffee == true
-     puts "Coffee is stocked!"
-  end
-end
-puts check_stock(4, true)
+
+
 # check_stock(3, "Tortillas");
 # => "Tortillas - running LOW"
-def check_stock(quantity, tortillas)
-  if quantity <= 4 && tortillas == true
-    puts "Tortillas - Running Low!!!"
-  end
-end
-puts check_stock(3, true)
+
 # check_stock(0, "Cheese");
 # => "Cheese - OUT of stock!"
-def check_stock(quantity, cheese)
-  if quantity == 0 && cheese == false 
-    puts "Cheese - OUT of stock!!!"
-  end
-end
-puts check_stock(0, false)
+
 # check_stock(1, "Salsa");
 # => "Salsa - running LOW"
-def check_stock(quantity, salsa)
-  if quantity <= 1 && salsa == false
-    puts "Salsa - running LOW!!"
+
+def check_stock(quantity, item)
+  if quantity >= 4 && item == "Coffee"
+     "Coffee is stocked"
+  elsif quantity <= 4 && item == "tortillas"
+   "Tortillas - running LOW!"
+  elsif quantity == 0 && item == "cheese"
+    "Cheese = OUT of stock!!"
+  elsif quantity <= 1 && item == "salsa"
+    "Salsa - running LOW!!"
+  else "Guess we'll serve something else"
   end
 end
-puts check_stock(1, false)
+puts check_stock(0, "salsa")
